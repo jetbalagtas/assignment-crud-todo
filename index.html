@@ -5,21 +5,65 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/html" id="todosTmpl">
+    <article data-id="<%= todolistData %>">
+      <article class="check-circle">
+        <input type="radio" name="test">
+      </article>
+      <article class="todo">
+        <%= content %>
+      </article>
+      </form>
+      <hr>
+    </article>
+  </script>
   </head>
   <body>
 
     <header>todos</header>
 
-    
+    <section class="todolist-container">
+      <form class="">
+        <button type="submit" name="button">></button>
+        <input type="text" id="content" rows="1" cols="">
+      </form>
+
+      <hr>
+
+
+      <section class="entries">
+        <span>
+          <section class="todos contentEditable">
+
+          </section>
+        </span>
+      </section>
 
 
 
+      <section class="controls">
+        <ul class="count">
+          <li><a rel="item-count" href="">Items Left</a></li>
+        </ul>
+        <ul class="folders">
+          <li><a rel="" href="">All</a></li>
+          <li><a rel="" href="">Active</a></li>
+          <li><a rel="" href="">Completed</a></li>
+        </ul>
+        <ul class="delete-todos">
+          <li><a rel="" href="">Clear Completed</a></li>
+        </ul>
+      </section>
+
+    </section>
+
+
+    <footer>Double-click to edit a todo</footer>
     <!-- lib files -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
     <!-- app files -->
     <script src="data.js"></script>
-    <script src="templates.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

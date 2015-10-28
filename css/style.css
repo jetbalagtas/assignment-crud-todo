@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray; }
+
+header, footer {
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 8rem;
+  color: darkgray;
+  font-weight: lighter; }
+
+footer {
+  font-size: 1rem;
+  padding-top: 50px;
+  margin-bottom: 10px; }
+
+.todolist-container {
+  width: 78%;
+  height: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 5px 6px #ccc; }
+
+form {
+  width: 95%;
+  margin: auto;
+  padding-left: 4%; }
+
+.check-circle {
+  width: 8%; }
+
+.todo {
+  width: 75%; }
+
+input {
+  border: 0;
+  width: 95%;
+  height: 4rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: grey;
+  text-align: left; }
+
+.todos {
+  background-color: #ffffff;
+  width: 85%;
+  margin: auto;
+  height: 4rem;
+  font-size: 2rem; }
+
+ul, li {
+  display: inline-block;
+  vertical-align: bottom; }
+  ul a, li a {
+    text-decoration: none;
+    color: lightgrey;
+    font-size: 1.25rem;
+    font-weight: lighter; }
+
+.controls {
+  width: 100%;
+  margin: auto; }
+
+.folders {
+  width: 31%;
+  margin-left: 18%;
+  margin-right: 10%; }
+
+.folders li {
+  padding-left: 20px;
+  padding-right: 20px; }
